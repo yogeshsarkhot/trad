@@ -1,0 +1,20 @@
+<h1 class="display-3">TRAD - Login</h1>
+<div>
+  Lorem Ipsum...
+</div>
+<div>
+  <br />
+  <form (ngSubmit)="login()">
+    <label for="userName">User Name</label>
+    <!-- Note: placeholder User for testing until REST Service is built -->
+    <input type="text" name="userName" id="userName" [(ngModel)]="userName" autofocus placeholder="User" />
+    <br />
+    <label for="userPwd">Password</label>
+    <!-- Note: placeholder password for testing until REST Service is built -->
+    <input type="password" name="userPwd" id="userPwd" [(ngModel)]="userPwd" placeholder="password" />
+    <br /><br />
+    <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <div class="err">{{loginMsg}}</div>
+  </form>
+</div>

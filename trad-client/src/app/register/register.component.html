@@ -1,0 +1,24 @@
+<h1 class="display-3">TRAD - Register</h1>
+<div>
+  Lorem Ipsum...
+</div>
+<div>
+  <br />
+  <form (ngSubmit)="register()">
+    <label for="userName">User Name</label>
+    <input type="text" name="userName" id="userName" [(ngModel)]="userName" autofocus />
+    <br />
+    <label for="userPwd">Password</label>
+    <input type="password" name="userPwd" id="userPwd" [(ngModel)]="userPwd" />
+    <br />
+    <label for="userPwdConfirm">Confirm</label>
+    <input type="password" name="userPwdConfirm" id="userPwdConfirm" [(ngModel)]="userPwdConfirm" />
+    <br />
+    <label for="userEmail">Email</label>
+    <input type="password" name="userEmail" id="userEmail" [(ngModel)]="userEmail" />
+    <br /><br />
+    <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    <button type="submit" class="btn btn-primary">Register</button>
+    <div class="err">{{registerMsg}}</div>
+  </form>
+</div>

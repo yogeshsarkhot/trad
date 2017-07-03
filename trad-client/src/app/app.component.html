@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">TRAD</a>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" (click)="processAuthAction()" id="authAction">{{authActionText}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div class="container">
+  <hr/>
+  <footer>
+    <p>&copy; Company 2017</p>
+  </footer>
+</div>
+</body>
+</html>
