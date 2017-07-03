@@ -1,0 +1,9 @@
+com\yvs\services\OrganizationService.class
+com\yvs\model\BaseModel.class
+com\yvs\commom\ConnectionManager.class
+com\yvs\services\FtoCService.class
+com\yvs\commom\Constants.class
+com\yvs\model\OrganizationModel.class
+com\yvs\services\CtoFService.class
+com\yvs\managers\OrganizationManager.class
+com\yvs\commom\CommonUtilities.class
